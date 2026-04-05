@@ -1,7 +1,7 @@
 # Terms of Service
 
 **FlexLex**
-**Last Updated: April 3, 2026**
+**Last Updated: April 5, 2026**
 
 Please read these Terms of Service ("Terms", "Agreement") carefully before using the FlexLex mobile application ("the App", "Service") operated by the developer ("we", "us", "our", "the Developer"). By downloading, installing, or using the App, you ("User", "you", "your") agree to be bound by these Terms in their entirety. If you do not agree to these Terms, you must immediately stop using and uninstall the App.
 
@@ -65,7 +65,7 @@ You represent and warrant that your User Content:
 
 ### 4.3 Imported Content
 
-When you import content from third-party sources (including but not limited to Quizlet, Anki, or any file), you are solely responsible for ensuring that:
+When you import content from third-party sources (including but not limited to any file), you are solely responsible for ensuring that:
 
 - You have the legal right to access, copy, and use that content
 - Your use complies with the originating platform's terms of service
@@ -81,10 +81,8 @@ You are solely responsible for ensuring that any images you add to the App (whet
 
 The App may interact with or enable access to third-party services, websites, and content. These include but are not limited to:
 
-- **Quizlet** (quizlet.com) — for importing study sets
 - **Google ML Kit** — for on-device OCR and translation
 - **GitHub** (raw.githubusercontent.com) — for downloading spell-check dictionaries
-- **Anki** — for importing deck files
 - **Your device's text-to-speech service** — for word pronunciation
 - **Your device's native share functionality** — for importing and exporting files
 
@@ -96,14 +94,6 @@ Your use of any third-party service through the App is subject to that service's
 - We are not liable for the availability, accuracy, content, legality, or quality of any third-party service
 - Third-party services may change, become unavailable, or restrict access at any time without notice to us
 - Any disputes between you and a third-party service provider are solely between you and that provider
-
-### 5.2 Quizlet Disclaimer
-
-The Quizlet import feature is provided as a convenience. We are not affiliated with, endorsed by, or sponsored by Quizlet Inc. Quizlet may change its API, block access, or modify its terms at any time. We do not guarantee the continued availability or functionality of the Quizlet import feature. You are responsible for complying with Quizlet's Terms of Service when using this feature.
-
-### 5.3 Anki Disclaimer
-
-The Anki import feature is provided as a convenience. We are not affiliated with, endorsed by, or sponsored by the Anki project or its developers. We do not guarantee compatibility with all Anki export formats, versions, or configurations.
 
 ## 6. Intellectual Property
 
@@ -198,7 +188,7 @@ You agree to indemnify, defend, and hold harmless the Developer, its affiliates,
 
 - Your use or misuse of the App
 - Your User Content, including any claims of intellectual property infringement
-- Your importation of third-party content (including from Quizlet, Anki, or any other source)
+- Your importation of third-party content
 - Your violation of these Terms
 - Your violation of any applicable law or regulation
 - Your violation of any third party's rights, including intellectual property, privacy, or publicity rights
