@@ -49,11 +49,15 @@ The App is designed to work offline. However, certain optional features require 
 
 When you first use spell-check for a given language, the App downloads open-source Hunspell dictionary files from GitHub (`raw.githubusercontent.com`). These files are cached locally for offline use. No personal data is sent during this download.
 
-### 5.2 Translation Models (User-Initiated)
+### 5.2 Translation Suggestions (User-Initiated)
 
-The App uses Google ML Kit for on-device translation. When you download a translation model for a language, the model files (approximately 30 MB each) are downloaded from Google's servers. After download, all translations are performed entirely on your device. No text you translate is sent to Google or any external server.
+The App provides optional translation suggestions using on-device machine learning. The technology used depends on your platform:
 
-Google ML Kit SDKs may automatically collect device and app information, performance metrics, and diagnostic data for Google's internal analytics and product improvement purposes, even when translation and OCR are performed on-device. This data collection is governed by [Google's Privacy Policy](https://policies.google.com/privacy) and is not controlled by us. For details on what ML Kit collects, see [Google's ML Kit data disclosure documentation](https://developers.google.com/ml-kit/android-data-disclosure).
+- **Android**: The App uses Google ML Kit for on-device translation. When you download a translation model for a language, the model files (approximately 30 MB each) are downloaded from Google's servers. After download, all translations are performed entirely on your device. No text you translate is sent to Google or any external server. Google ML Kit SDKs may automatically collect device and app information, performance metrics, and diagnostic data for Google's internal analytics and product improvement purposes, even when translation is performed on-device. This data collection is governed by [Google's Privacy Policy](https://policies.google.com/privacy) and is not controlled by us. For details on what ML Kit collects, see [Google's ML Kit data disclosure documentation](https://developers.google.com/ml-kit/android-data-disclosure).
+
+- **iOS**: The App uses Apple's built-in Translation framework (available on iOS 18.0 and later) for on-device translation. All translations are processed entirely on your device using Apple's system translation models. No text you translate is sent to any external server by the App. The Translation framework is provided and managed by Apple as part of iOS. For details on how Apple handles data, see [Apple's Privacy Policy](https://www.apple.com/legal/privacy/).
+
+The set of supported translation languages may differ between platforms, as each relies on its respective provider's available language models. Translation suggestions are provided as a convenience and may not be available for all language pairs on all devices.
 
 ### 5.3 Text-to-Speech (Device Service)
 
@@ -70,7 +74,7 @@ We strongly recommend storing backups in a secure location and not sharing them 
 We do not share, sell, rent, trade, or otherwise disclose any of your data to any third party. The only way your data leaves your device is if you:
 
 - Manually export or share a study set or backup file
-- Download spell-check dictionaries or translation models (which connects to GitHub/Google)
+- Download spell-check dictionaries or translation models (which connects to GitHub and, on Android, Google)
 
 ## 8. Children's Privacy
 
