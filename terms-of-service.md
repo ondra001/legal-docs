@@ -337,7 +337,7 @@ Each party's obligations under these Terms are independent of the other party's 
 
 If you have any questions about these Terms, please contact us at:
 
-**Email:** [INSERT YOUR CONTACT EMAIL]
+**Email:** privacy@flexlex.app
 
 ---
 

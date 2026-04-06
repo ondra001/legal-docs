@@ -118,7 +118,7 @@ THE APP IS PROVIDED ON AN "AS IS" AND "AS AVAILABLE" BASIS. WE MAKE NO WARRANTIE
 
 If you have any questions, concerns, or requests regarding this Privacy Policy, please contact us at:
 
-**Email:** [INSERT YOUR CONTACT EMAIL]
+**Email:** privacy@flexlex.app
 
 ---
 
