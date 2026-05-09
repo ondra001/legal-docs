@@ -1,7 +1,7 @@
 # Terms of Service
 
 **FlexLex**
-**Last Updated: April 5, 2026**
+**Last Updated: May 9, 2026**
 
 Please read these Terms of Service ("Terms", "Agreement") carefully before using the FlexLex mobile application ("the App", "Service") operated by the developer ("we", "us", "our", "the Developer"). By downloading, installing, or using the App, you ("User", "you", "your") agree to be bound by these Terms in their entirety. If you do not agree to these Terms, you must immediately stop using and uninstall the App.
 
@@ -20,9 +20,7 @@ We reserve the right to modify these Terms at any time. Updated Terms will be in
 
 ## 2. Description of Service
 
-FlexLex is a vocabulary learning application that allows users to create, manage, and study flashcard sets. The App operates primarily offline on your device. We do not provide any cloud services, online accounts, or server-side functionality.
-
-**The App is currently in beta.** As a beta version, the App may contain bugs, errors, defects, or inaccuracies that could result in unexpected behavior, data loss, or other issues. By using the App, you acknowledge and accept the inherent risks associated with using beta software. We make no guarantees regarding the stability, reliability, or completeness of the App during the beta period. Beta status does not limit or modify any other disclaimer or limitation in these Terms; rather, it serves as an additional acknowledgment of the App's developmental nature.
+FlexLex is a vocabulary learning application that allows users to create, manage, and study flashcard sets. The App operates primarily offline on your device. A limited server-side component is used solely for verifying Pro purchases and processing promotional codes; no personal data is stored on our servers beyond what is described in our Privacy Policy.
 
 ### 2.1 No Professional or Educational Guarantee
 
@@ -33,7 +31,33 @@ The App is a personal self-study tool and does not provide professional language
 - Any specific learning outcomes, test scores, or academic results
 - The suitability of the App for any particular educational purpose or certification
 
-## 3. License
+## 3. Pro Subscription and In-App Purchases
+
+### 3.1 FlexLex Pro
+
+Certain features of the App ("Pro features") require a paid subscription ("FlexLex Pro"). Pro features are clearly indicated within the App. The free version of the App remains fully functional without a Pro subscription, subject to the limitations described in the App.
+
+### 3.2 Billing
+
+FlexLex Pro is available as an auto-renewing annual subscription billed at $15.00 USD per year (or the equivalent price in your local currency as displayed at the time of purchase). Billing is handled exclusively by Google Play (Android) or Apple App Store (iOS). By subscribing, you agree to the billing terms of the applicable platform. We do not process payments directly and do not have access to your payment information.
+
+### 3.3 Free Trial
+
+A 30-day free trial of Pro features may be offered to new users. The trial is non-transferable, limited to one per device, and may not be available if you have previously used a trial on the same device. After the trial period, your subscription will automatically renew at the standard price unless cancelled before the trial ends.
+
+### 3.4 Cancellation and Refunds
+
+You may cancel your subscription at any time through your Google Play or Apple App Store account settings. Cancellation takes effect at the end of the current billing period; you retain access to Pro features until that date. Refunds are governed by the refund policies of Google Play or Apple App Store respectively. We do not issue refunds directly. After cancellation, you will retain access to the free features of the App.
+
+### 3.5 Grace Period
+
+If a renewal payment fails, Pro features remain accessible for a grace period of up to 7 days while the platform retries the payment. If payment is not collected within the grace period, Pro access is suspended until the subscription is renewed.
+
+### 3.6 Price Changes
+
+We reserve the right to change the subscription price at any time. Price changes will take effect at the start of the next subscription period following notice to you. Your continued subscription after a price change constitutes your acceptance of the new price.
+
+## 4. License
 
 Subject to your compliance with these Terms, we grant you a limited, non-exclusive, non-transferable, non-sublicensable, revocable license to download, install, and use the App on a device that you own or control, strictly for your personal, non-commercial use. We reserve all rights not expressly granted to you.
 
@@ -49,7 +73,7 @@ You may **not**:
 - Use automated systems, bots, or scripts to interact with the App or any connected service
 - Use the App for any commercial purpose without our prior written consent
 
-## 4. User Content and Responsibility
+## 5. User Content and Responsibility
 
 ### 4.1 Your Content
 
@@ -77,7 +101,7 @@ We do not verify the legality, accuracy, or appropriateness of imported content 
 
 You are solely responsible for ensuring that any images you add to the App (whether from your camera, photo library, or imported from external sources) do not infringe on any third party's rights, including copyright, trademark, privacy, or publicity rights. We do not host, transmit, or have access to your images.
 
-## 5. Third-Party Services
+## 6. Third-Party Services
 
 The App may interact with or enable access to third-party services, websites, and content. These include but are not limited to:
 
@@ -95,7 +119,7 @@ Your use of any third-party service through the App is subject to that service's
 - Third-party services may change, become unavailable, or restrict access at any time without notice to us
 - Any disputes between you and a third-party service provider are solely between you and that provider
 
-## 6. Intellectual Property
+## 7. Intellectual Property
 
 ### 6.1 Our Rights
 
@@ -109,7 +133,7 @@ You retain all ownership rights to the User Content you create within the App. W
 
 Any feedback, suggestions, ideas, improvements, or other submissions you provide to us regarding the App ("Feedback") shall be deemed non-confidential and non-proprietary. You hereby grant us a non-exclusive, worldwide, royalty-free, irrevocable, perpetual, sublicensable license to use, reproduce, modify, adapt, publish, distribute, and incorporate such Feedback for any purpose without any obligation, compensation, or attribution to you.
 
-## 7. Disclaimer of Warranties
+## 8. Disclaimer of Warranties
 
 TO THE MAXIMUM EXTENT PERMITTED BY APPLICABLE LAW, THE APP IS PROVIDED "AS IS", "AS AVAILABLE", AND "WITH ALL FAULTS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED. WE EXPRESSLY DISCLAIM ALL WARRANTIES, INCLUDING BUT NOT LIMITED TO:
 
@@ -132,7 +156,7 @@ YOU ACKNOWLEDGE THAT:
 - The App is a study tool, not a certified educational service.
 - The App is in beta and may contain bugs, defects, or errors that could affect functionality or data integrity.
 
-## 8. Assumption of Risk
+## 9. Assumption of Risk
 
 YOU EXPRESSLY ACKNOWLEDGE AND AGREE THAT YOUR USE OF THE APP IS AT YOUR SOLE RISK. YOU ASSUME FULL RESPONSIBILITY FOR ALL RISKS ASSOCIATED WITH USING THE APP, INCLUDING BUT NOT LIMITED TO:
 
@@ -148,7 +172,7 @@ YOU VOLUNTARILY ASSUME ALL SUCH RISKS, KNOWN AND UNKNOWN, EVEN IF ARISING FROM T
 
 YOUR SOLE AND EXCLUSIVE REMEDY FOR DISSATISFACTION WITH THE APP IS TO STOP USING AND UNINSTALL THE APP.
 
-## 9. Limitation of Liability
+## 10. Limitation of Liability
 
 TO THE MAXIMUM EXTENT PERMITTED BY APPLICABLE LAW:
 
@@ -182,7 +206,7 @@ THE LIMITATIONS AND EXCLUSIONS IN THIS SECTION FORM AN ESSENTIAL BASIS OF THE AG
 
 SOME JURISDICTIONS DO NOT ALLOW THE EXCLUSION OR LIMITATION OF CERTAIN WARRANTIES OR LIABILITY. IN SUCH JURISDICTIONS, OUR LIABILITY SHALL BE LIMITED TO THE FULLEST EXTENT PERMITTED BY LAW.
 
-## 10. Indemnification
+## 11. Indemnification
 
 You agree to indemnify, defend, and hold harmless the Developer, its affiliates, officers, directors, employees, agents, licensors, shareholders, successors, assigns, and service providers from and against any and all claims, demands, losses, liabilities, damages, costs, and expenses (including reasonable attorneys' fees and court costs) arising from or related to:
 
@@ -198,7 +222,7 @@ You agree to indemnify, defend, and hold harmless the Developer, its affiliates,
 
 This indemnification obligation survives the termination of these Terms and your use of the App.
 
-## 11. Data Loss and Backup
+## 12. Data Loss and Backup
 
 ### 11.1 No Guarantee Against Data Loss
 
@@ -219,7 +243,7 @@ You are solely responsible for backing up your data. The App provides a backup a
 
 Backup files exported from the App are not encrypted. You are responsible for storing backups securely and for any consequences of backup files being accessed by unauthorized parties.
 
-## 12. Modifications to the App
+## 13. Modifications to the App
 
 We reserve the right to modify, update, suspend, or discontinue the App (or any part thereof) at any time, with or without notice, and without liability to you. This includes but is not limited to:
 
@@ -231,7 +255,7 @@ We reserve the right to modify, update, suspend, or discontinue the App (or any 
 
 We are not obligated to provide updates, maintenance, support, or bug fixes.
 
-## 13. Termination
+## 14. Termination
 
 ### 13.1 By You
 
@@ -243,9 +267,9 @@ We may terminate or suspend your license to use the App at any time, for any rea
 
 ### 13.3 Effect of Termination
 
-Upon termination, your license to use the App is immediately revoked. Sections 4 (User Content), 6 (Intellectual Property), 7 (Disclaimers), 8 (Assumption of Risk), 9 (Limitation of Liability), 10 (Indemnification), 14 (Governing Law), 15 (Dispute Resolution), and the General Provisions survive termination.
+Upon termination, your license to use the App is immediately revoked. Sections 5 (User Content), 7 (Intellectual Property), 8 (Disclaimers), 9 (Assumption of Risk), 10 (Limitation of Liability), 11 (Indemnification), 15 (Governing Law), 16 (Dispute Resolution), and the General Provisions survive termination.
 
-## 14. Governing Law
+## 15. Governing Law
 
 These Terms shall be governed by and construed in accordance with the laws of the Czech Republic, without regard to its conflict of law principles.
 
@@ -253,7 +277,7 @@ Nothing in these Terms shall affect the statutory rights of consumers under the 
 
 You agree to submit to the personal and exclusive jurisdiction of the courts located in Prague, Czech Republic, except where mandatory consumer protection laws in your jurisdiction grant you the right to bring proceedings in your local courts.
 
-## 15. Dispute Resolution
+## 16. Dispute Resolution
 
 ### 15.1 Informal Resolution
 
@@ -283,31 +307,31 @@ Notwithstanding any arbitration or dispute resolution provisions above, either p
 
 YOU AGREE THAT ANY CLAIM OR CAUSE OF ACTION ARISING OUT OF OR RELATED TO YOUR USE OF THE APP OR THESE TERMS MUST BE FILED WITHIN ONE (1) YEAR AFTER SUCH CLAIM OR CAUSE OF ACTION AROSE, OR IT SHALL BE FOREVER BARRED. THIS LIMITATION APPLIES REGARDLESS OF ANY STATUTE OF LIMITATIONS TO THE CONTRARY, TO THE MAXIMUM EXTENT PERMITTED BY APPLICABLE LAW.
 
-## 16. Severability
+## 17. Severability
 
 If any provision of these Terms is found to be unenforceable or invalid by a court of competent jurisdiction, that provision shall be enforced to the maximum extent permissible, and the remaining provisions shall remain in full force and effect. The invalid provision shall be modified to the minimum extent necessary to make it valid and enforceable while preserving the original intent.
 
-## 17. Entire Agreement
+## 18. Entire Agreement
 
 These Terms, together with the Privacy Policy, constitute the entire agreement between you and the Developer regarding the use of the App and supersede all prior agreements, understandings, representations, and warranties, whether written or oral.
 
-## 18. Waiver
+## 19. Waiver
 
 The failure of the Developer to enforce any right or provision of these Terms shall not constitute a waiver of that right or provision. Any waiver of any provision of these Terms will be effective only if in writing and signed by the Developer.
 
-## 19. Assignment
+## 20. Assignment
 
 You may not assign or transfer these Terms or your rights under these Terms without our prior written consent. We may assign our rights and obligations under these Terms without restriction. These Terms shall be binding upon and inure to the benefit of the parties and their respective successors and permitted assigns.
 
-## 20. Force Majeure
+## 21. Force Majeure
 
 We shall not be liable for any failure or delay in performing our obligations under these Terms due to circumstances beyond our reasonable control, including but not limited to natural disasters, war, terrorism, civil unrest, pandemics, government actions, internet outages, power failures, telecommunications failures, hardware or software failures, third-party service failures, or acts of God.
 
-## 21. Export Compliance
+## 22. Export Compliance
 
 You agree to comply with all applicable export control laws and regulations. You may not use, export, or re-export the App in violation of any applicable laws or regulations.
 
-## 22. General Provisions
+## 23. General Provisions
 
 ### 22.1 No Third-Party Beneficiaries
 
@@ -333,7 +357,7 @@ The section headings in these Terms are for convenience only and have no legal o
 
 Each party's obligations under these Terms are independent of the other party's obligations. A party's performance is not conditioned on the other party's performance.
 
-## 23. Contact
+## 24. Contact
 
 If you have any questions about these Terms, please contact us at:
 

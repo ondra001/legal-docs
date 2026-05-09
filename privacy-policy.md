@@ -1,7 +1,7 @@
 # Privacy Policy
 
 **FlexLex**
-**Last Updated: April 5, 2026**
+**Last Updated: May 9, 2026**
 
 This Privacy Policy describes how FlexLex ("the App", "we", "us", or "our") handles information when you use our mobile application. By using the App, you agree to the practices described in this Privacy Policy. If you do not agree, please do not use the App.
 
@@ -45,11 +45,15 @@ You may deny these permissions; the App will continue to function without camera
 
 The App is designed to work offline. However, certain optional features require an internet connection. These features are always user-initiated and never occur in the background without your action.
 
-### 5.1 Spell-Check Dictionaries (User-Initiated)
+### 5.1 Pro Purchase Verification (User-Initiated)
+
+When you purchase or restore FlexLex Pro, or redeem a promotional code, the App communicates with our purchase verification service hosted on Cloudflare Workers (`flexlex-pro.flexlexapp.workers.dev`). During this process, a device identifier (derived from your device hardware information) is sent to verify and bind your Pro entitlement to your device. This identifier is used solely for purchase verification and is not linked to any personal information. It is not shared with any third party. The communication is encrypted in transit using TLS.
+
+### 5.2 Spell-Check Dictionaries (User-Initiated)
 
 When you first use spell-check for a given language, the App downloads open-source Hunspell dictionary files from GitHub (`raw.githubusercontent.com`). These files are cached locally for offline use. No personal data is sent during this download.
 
-### 5.2 Translation Suggestions (User-Initiated)
+### 5.3 Translation Suggestions (User-Initiated)
 
 The App provides optional translation suggestions using on-device machine learning. The technology used depends on your platform:
 
@@ -59,7 +63,7 @@ The App provides optional translation suggestions using on-device machine learni
 
 The set of supported translation languages may differ between platforms, as each relies on its respective provider's available language models. Translation suggestions are provided as a convenience and may not be available for all language pairs on all devices.
 
-### 5.3 Text-to-Speech (Device Service)
+### 5.4 Text-to-Speech (Device Service)
 
 The App uses your device's built-in text-to-speech (TTS) engine to pronounce words. Depending on your device and OS configuration, the TTS engine may use cloud services provided by your device manufacturer (e.g., Google, Apple). We do not control or have access to any data processed by your device's TTS service.
 
@@ -85,7 +89,7 @@ The App does not knowingly collect any personal information from anyone, includi
 All your data is stored locally on your device. You have full control over it at all times.
 
 - **Delete individual items**: You can delete any set, folder, or word within the App.
-- **Delete all data**: You can clear all App data through your device's system settings (Settings > Apps > FlexLex > Clear Data / Uninstall).
+- **Delete all data**: You can wipe all App data at once via Settings → Data → Delete All Data within the App, or through your device's system settings (Settings > Apps > FlexLex > Clear Data).
 - **Uninstalling the App** removes all locally stored data, including study sets, images, preferences, and statistics.
 
 We do not retain any data on external servers, so there is nothing for us to delete on our end.
