@@ -57,6 +57,22 @@ If a renewal payment fails, Pro features remain accessible for a grace period of
 
 We reserve the right to change the subscription price at any time. Price changes will take effect at the start of the next subscription period following notice to you. Your continued subscription after a price change constitutes your acceptance of the new price.
 
+### 3.7 Right to Modify or Discontinue Pro Features
+
+We reserve the right to add, modify, remove, or discontinue any Pro feature at any time, with or without notice, and without liability to you. We do not guarantee that any specific feature will remain available throughout your subscription period. If we discontinue the Pro subscription entirely, we will make reasonable efforts to notify users, but we are not obligated to provide a refund for any remaining subscription period beyond what the applicable platform's refund policy requires.
+
+### 3.8 No Liability for Billing Platform Failures
+
+Purchase processing, subscription management, and billing are handled exclusively by Google Play or Apple App Store. We are not responsible for any failure, error, delay, or interruption of the billing platform, including but not limited to failed purchases, incorrect charges, missed renewals, or platform outages. All billing disputes must be directed to the applicable platform.
+
+### 3.9 Purchase Verification Availability
+
+Pro access is verified through our purchase verification service. While we make reasonable efforts to keep this service available, we do not guarantee uninterrupted availability. Temporary unavailability of the verification service does not entitle you to a refund or any compensation. Your Pro entitlement remains valid and will be restored once the service is available again.
+
+### 3.10 Termination of Pro Access
+
+We reserve the right to terminate or suspend your Pro subscription without refund if you violate these Terms, abuse the App, attempt to circumvent purchase verification, share or resell access credentials, or engage in any fraudulent activity in connection with the App or its purchase system.
+
 ## 4. License
 
 Subject to your compliance with these Terms, we grant you a limited, non-exclusive, non-transferable, non-sublicensable, revocable license to download, install, and use the App on a device that you own or control, strictly for your personal, non-commercial use. We reserve all rights not expressly granted to you.
@@ -75,11 +91,11 @@ You may **not**:
 
 ## 5. User Content and Responsibility
 
-### 4.1 Your Content
+### 5.1 Your Content
 
 You are solely responsible for all content you create, import, or store within the App, including but not limited to words, translations, images, study sets, and any other data ("User Content"). We do not review, monitor, moderate, endorse, or assume any responsibility for User Content.
 
-### 4.2 Content Legality
+### 5.2 Content Legality
 
 You represent and warrant that your User Content:
 
@@ -87,7 +103,7 @@ You represent and warrant that your User Content:
 - Does not contain unlawful, defamatory, obscene, harmful, threatening, harassing, or otherwise objectionable material
 - Complies with all applicable local, national, and international laws and regulations
 
-### 4.3 Imported Content
+### 5.3 Imported Content
 
 When you import content from third-party sources (including but not limited to any file), you are solely responsible for ensuring that:
 
@@ -97,7 +113,7 @@ When you import content from third-party sources (including but not limited to a
 
 We do not verify the legality, accuracy, or appropriateness of imported content and accept no liability for any claims arising from your importation or use of third-party content.
 
-### 4.4 Images
+### 5.4 Images
 
 You are solely responsible for ensuring that any images you add to the App (whether from your camera, photo library, or imported from external sources) do not infringe on any third party's rights, including copyright, trademark, privacy, or publicity rights. We do not host, transmit, or have access to your images.
 
@@ -167,16 +183,21 @@ YOU EXPRESSLY ACKNOWLEDGE AND AGREE THAT YOUR USE OF THE APP IS AT YOUR SOLE RIS
 - Creating and maintaining backups of your data
 - Compliance with applicable laws when using the App
 - Any interactions with third-party services accessed through the App
+- Any inability to access Pro features due to purchase verification service unavailability
+- Any changes to, removal of, or interruption of Pro features
+- Any failure of a third-party billing platform to process or renew your subscription
+- Any bugs, errors, crashes, or unexpected behaviour in the App
+- Any loss of study progress, streaks, or statistics resulting from App use, device failure, or data corruption
 
 YOU VOLUNTARILY ASSUME ALL SUCH RISKS, KNOWN AND UNKNOWN, EVEN IF ARISING FROM THE NEGLIGENCE OR FAULT OF THE DEVELOPER.
 
-YOUR SOLE AND EXCLUSIVE REMEDY FOR DISSATISFACTION WITH THE APP IS TO STOP USING AND UNINSTALL THE APP.
+YOUR SOLE AND EXCLUSIVE REMEDY FOR DISSATISFACTION WITH THE APP OR ANY OF ITS FEATURES IS TO CANCEL YOUR SUBSCRIPTION AND STOP USING AND UNINSTALL THE APP. NO OTHER REMEDY, INCLUDING ANY CLAIM FOR DAMAGES, SHALL BE AVAILABLE TO YOU.
 
 ## 10. Limitation of Liability
 
 TO THE MAXIMUM EXTENT PERMITTED BY APPLICABLE LAW:
 
-### 9.1 No Liability for Damages
+### 10.1 No Liability for Damages
 
 IN NO EVENT SHALL THE DEVELOPER, ITS AFFILIATES, OFFICERS, DIRECTORS, EMPLOYEES, AGENTS, LICENSORS, SHAREHOLDERS, SUCCESSORS, ASSIGNS, OR SERVICE PROVIDERS BE LIABLE FOR ANY INDIRECT, INCIDENTAL, SPECIAL, CONSEQUENTIAL, EXEMPLARY, OR PUNITIVE DAMAGES, INCLUDING BUT NOT LIMITED TO:
 
@@ -194,15 +215,15 @@ IN NO EVENT SHALL THE DEVELOPER, ITS AFFILIATES, OFFICERS, DIRECTORS, EMPLOYEES,
 
 WHETHER BASED ON WARRANTY, CONTRACT, TORT (INCLUDING NEGLIGENCE), STRICT LIABILITY, OR ANY OTHER LEGAL THEORY, AND WHETHER OR NOT WE HAVE BEEN ADVISED OF THE POSSIBILITY OF SUCH DAMAGES.
 
-### 9.2 Maximum Liability
+### 10.2 Maximum Liability
 
 IF, NOTWITHSTANDING THE ABOVE, WE ARE FOUND LIABLE FOR ANY REASON, OUR TOTAL AGGREGATE LIABILITY TO YOU FOR ALL CLAIMS ARISING FROM OR RELATED TO THE APP SHALL NOT EXCEED THE AMOUNT YOU ACTUALLY PAID FOR THE APP IN THE TWELVE (12) MONTHS PRECEDING THE CLAIM, OR ONE US DOLLAR ($1.00 USD), WHICHEVER IS GREATER.
 
-### 9.3 Essential Basis
+### 10.3 Essential Basis
 
 THE LIMITATIONS AND EXCLUSIONS IN THIS SECTION FORM AN ESSENTIAL BASIS OF THE AGREEMENT BETWEEN YOU AND US. THE APP WOULD NOT BE PROVIDED TO YOU WITHOUT THESE LIMITATIONS.
 
-### 9.4 Jurisdictional Variations
+### 10.4 Jurisdictional Variations
 
 SOME JURISDICTIONS DO NOT ALLOW THE EXCLUSION OR LIMITATION OF CERTAIN WARRANTIES OR LIABILITY. IN SUCH JURISDICTIONS, OUR LIABILITY SHALL BE LIMITED TO THE FULLEST EXTENT PERMITTED BY LAW.
 
