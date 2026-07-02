@@ -1,7 +1,7 @@
 # Terms of Service
 
 **FlexLex**
-**Last Updated: May 9, 2026**
+**Last Updated: July 2, 2026**
 
 Please read these Terms of Service ("Terms", "Agreement") carefully before using the FlexLex mobile application ("the App", "Service") operated by the developer ("we", "us", "our", "the Developer"). By downloading, installing, or using the App, you ("User", "you", "your") agree to be bound by these Terms in their entirety. If you do not agree to these Terms, you must immediately stop using and uninstall the App.
 
@@ -73,6 +73,17 @@ Pro access is verified through our purchase verification service. While we make 
 
 We reserve the right to terminate or suspend your Pro subscription without refund if you violate these Terms, abuse the App, attempt to circumvent purchase verification, share or resell access credentials, or engage in any fraudulent activity in connection with the App or its purchase system.
 
+### 3.11 Virtual Currency (Gems)
+
+The App may include a virtual currency ("Gems") that can be earned through use of the App and, where offered, purchased through Google Play as a consumable in-app product. Gems and any other virtual items:
+
+- Have no monetary value, are not redeemable for cash, and cannot be exchanged, transferred, sold, or traded outside the App;
+- Are licensed to you for personal, non-commercial use within the App only; you acquire no ownership or property interest in them;
+- Are consumed when used within the App. Purchases of consumable virtual currency are final and non-refundable once the Gems have been delivered to your account, except where a refund is required by the applicable platform's policy or by mandatory law;
+- May be modified, revalued, expired, or discontinued by us at any time, with or without notice, and without liability to you.
+
+We do not process Gem purchases directly; all purchases are handled by Google Play, subject to its terms, and we do not have access to your payment information. Any Gems you have earned or purchased are forfeited if your access to the App is terminated under these Terms or if you uninstall the App.
+
 ## 4. License
 
 Subject to your compliance with these Terms, we grant you a limited, non-exclusive, non-transferable, non-sublicensable, revocable license to download, install, and use the App on a device that you own or control, strictly for your personal, non-commercial use. We reserve all rights not expressly granted to you.
@@ -123,10 +134,12 @@ The App may interact with or enable access to third-party services, websites, an
 
 - **Google ML Kit** — for on-device OCR and translation
 - **GitHub** (raw.githubusercontent.com) — for downloading spell-check dictionaries
+- **Hugging Face** (huggingface.co) and/or **Google AI Core (Gemini Nano)** — for the optional, on-device AI story generation feature (see the Privacy Policy for details)
 - **Your device's text-to-speech service** — for word pronunciation
 - **Your device's native share functionality** — for importing and exporting files
+- **Our purchase verification service** (Cloudflare Workers) — for verifying Pro purchases and administering the free trial
 
-### 5.1 Third-Party Terms
+### 6.1 Third-Party Terms
 
 Your use of any third-party service through the App is subject to that service's own terms of service and privacy policy. We are not a party to any agreement between you and any third-party service provider. You acknowledge and agree that:
 
@@ -137,15 +150,15 @@ Your use of any third-party service through the App is subject to that service's
 
 ## 7. Intellectual Property
 
-### 6.1 Our Rights
+### 7.1 Our Rights
 
-The App, including its design, code, graphics, user interface, logos, and all other elements (excluding User Content), is the exclusive property of the Developer and is protected by copyright, trademark, and other intellectual property laws. Nothing in these Terms grants you any right, title, or interest in the App beyond the limited license described in Section 3.
+The App, including its design, code, graphics, user interface, logos, and all other elements (excluding User Content), is the exclusive property of the Developer and is protected by copyright, trademark, and other intellectual property laws. Nothing in these Terms grants you any right, title, or interest in the App beyond the limited license described in Section 4.
 
-### 6.2 Your Rights
+### 7.2 Your Rights
 
 You retain all ownership rights to the User Content you create within the App. We do not claim any ownership of your User Content.
 
-### 6.3 Feedback
+### 7.3 Feedback
 
 Any feedback, suggestions, ideas, improvements, or other submissions you provide to us regarding the App ("Feedback") shall be deemed non-confidential and non-proprietary. You hereby grant us a non-exclusive, worldwide, royalty-free, irrevocable, perpetual, sublicensable license to use, reproduce, modify, adapt, publish, distribute, and incorporate such Feedback for any purpose without any obligation, compensation, or attribution to you.
 
@@ -170,7 +183,7 @@ YOU ACKNOWLEDGE THAT:
 - Spell-check suggestions may be incorrect or incomplete.
 - Spaced repetition scheduling is algorithmic and does not guarantee learning outcomes.
 - The App is a study tool, not a certified educational service.
-- The App is in beta and may contain bugs, defects, or errors that could affect functionality or data integrity.
+- The App may contain bugs, defects, or errors that could affect functionality or data integrity.
 
 ## 9. Assumption of Risk
 
@@ -245,9 +258,9 @@ This indemnification obligation survives the termination of these Terms and your
 
 ## 12. Data Loss and Backup
 
-### 11.1 No Guarantee Against Data Loss
+### 12.1 No Guarantee Against Data Loss
 
-All data is stored exclusively on your device. We do not maintain copies, backups, or replicas of your data on any server or cloud service. We do not guarantee the preservation or integrity of any data stored within the App. Data may be lost due to, including but not limited to:
+All of your learning content is stored exclusively on your device. We do not maintain copies, backups, or replicas of your learning content on any server or cloud service. We do not guarantee the preservation or integrity of any data stored within the App. Data may be lost due to, including but not limited to:
 
 - App updates or reinstallation
 - Device failure, theft, loss, or damage
@@ -256,13 +269,17 @@ All data is stored exclusively on your device. We do not maintain copies, backup
 - Software bugs or defects
 - Storage corruption
 
-### 11.2 Your Responsibility
+### 12.2 Your Responsibility
 
 You are solely responsible for backing up your data. The App provides a backup and export feature for this purpose. We strongly recommend creating regular backups. We have no ability to recover, restore, or retrieve any data lost for any reason. We are not liable for any data loss under any circumstances.
 
-### 11.3 Backup Security
+### 12.3 Automatic Local Backup
 
-Backup files exported from the App are not encrypted. You are responsible for storing backups securely and for any consequences of backup files being accessed by unauthorized parties.
+As an additional safeguard, the App may automatically write a single backup file to your device's public Downloads folder the first time you open the App after an update that changes its internal data format. This file is stored only on your device and is never uploaded to us or any third party. It is not removed when you uninstall the App; you may delete it yourself at any time through your device's file manager.
+
+### 12.4 Backup Security
+
+Backup files created by the App (whether exported manually or written automatically) are not encrypted. You are responsible for storing backups securely and for any consequences of backup files being accessed by unauthorized parties.
 
 ## 13. Modifications to the App
 
@@ -278,15 +295,15 @@ We are not obligated to provide updates, maintenance, support, or bug fixes.
 
 ## 14. Termination
 
-### 13.1 By You
+### 14.1 By You
 
 You may terminate this Agreement at any time by uninstalling the App and deleting all copies from your devices. Upon uninstallation, all data stored by the App on your device will be permanently deleted.
 
-### 13.2 By Us
+### 14.2 By Us
 
 We may terminate or suspend your license to use the App at any time, for any reason, without notice or liability.
 
-### 13.3 Effect of Termination
+### 14.3 Effect of Termination
 
 Upon termination, your license to use the App is immediately revoked. Sections 5 (User Content), 7 (Intellectual Property), 8 (Disclaimers), 9 (Assumption of Risk), 10 (Limitation of Liability), 11 (Indemnification), 15 (Governing Law), 16 (Dispute Resolution), and the General Provisions survive termination.
 
@@ -300,31 +317,31 @@ You agree to submit to the personal and exclusive jurisdiction of the courts loc
 
 ## 16. Dispute Resolution
 
-### 15.1 Informal Resolution
+### 16.1 Informal Resolution
 
 Before filing any formal legal action, you agree to first contact us and attempt to resolve the dispute informally for a period of at least thirty (30) days. Most disputes can be resolved without litigation.
 
-### 15.2 Arbitration (Non-EU/EEA/UK Users)
+### 16.2 Arbitration (Non-EU/EEA/UK Users)
 
 If you are not a resident of the European Union, the European Economic Area, or the United Kingdom, and informal resolution fails, any dispute, controversy, or claim arising out of or relating to these Terms or the App shall be settled by binding arbitration administered by the Arbitration Court attached to the Czech Chamber of Commerce and the Agricultural Chamber of the Czech Republic, in accordance with its rules. The seat of arbitration shall be Prague, Czech Republic. The language of arbitration shall be English. The arbitrator's decision shall be final and binding and may be entered as a judgment in any court of competent jurisdiction.
 
-### 15.3 EU/EEA/UK Users
+### 16.3 EU/EEA/UK Users
 
 If you are a resident of the European Union, the European Economic Area, or the United Kingdom, you may bring proceedings in the courts of your country of residence in accordance with applicable mandatory consumer protection laws, or in the courts of Prague, Czech Republic. You may also use the European Commission's Online Dispute Resolution (ODR) platform at https://ec.europa.eu/consumers/odr if applicable.
 
-### 15.4 Class Action Waiver
+### 16.4 Class Action Waiver
 
 TO THE MAXIMUM EXTENT PERMITTED BY APPLICABLE LAW, YOU AGREE THAT ANY DISPUTE RESOLUTION PROCEEDINGS WILL BE CONDUCTED ONLY ON AN INDIVIDUAL BASIS AND NOT IN A CLASS, CONSOLIDATED, OR REPRESENTATIVE ACTION. YOU WAIVE ANY RIGHT TO PARTICIPATE IN A CLASS ACTION LAWSUIT OR CLASS-WIDE ARBITRATION AGAINST THE DEVELOPER.
 
-### 15.5 Small Claims Exception
+### 16.5 Small Claims Exception
 
 Notwithstanding the above, either party may bring an individual action in small claims court for disputes within the jurisdictional limits of that court.
 
-### 15.6 Injunctive Relief
+### 16.6 Injunctive Relief
 
 Notwithstanding any arbitration or dispute resolution provisions above, either party may seek injunctive or other equitable relief in any court of competent jurisdiction to prevent the actual or threatened infringement, misappropriation, or violation of intellectual property rights.
 
-### 15.7 Time Limitation
+### 16.7 Time Limitation
 
 YOU AGREE THAT ANY CLAIM OR CAUSE OF ACTION ARISING OUT OF OR RELATED TO YOUR USE OF THE APP OR THESE TERMS MUST BE FILED WITHIN ONE (1) YEAR AFTER SUCH CLAIM OR CAUSE OF ACTION AROSE, OR IT SHALL BE FOREVER BARRED. THIS LIMITATION APPLIES REGARDLESS OF ANY STATUTE OF LIMITATIONS TO THE CONTRARY, TO THE MAXIMUM EXTENT PERMITTED BY APPLICABLE LAW.
 
@@ -354,27 +371,27 @@ You agree to comply with all applicable export control laws and regulations. You
 
 ## 23. General Provisions
 
-### 22.1 No Third-Party Beneficiaries
+### 23.1 No Third-Party Beneficiaries
 
 These Terms are intended solely for the benefit of you and the Developer and do not create any third-party beneficiary rights. No third party shall have any right to enforce any provision of these Terms.
 
-### 22.2 Relationship of Parties
+### 23.2 Relationship of Parties
 
 Nothing in these Terms shall be construed to create a partnership, joint venture, employment, agency, or fiduciary relationship between you and the Developer. Neither party has the authority to bind the other or to incur any obligation on the other's behalf.
 
-### 22.3 Electronic Communications
+### 23.3 Electronic Communications
 
 By using the App, you consent to receiving electronic communications from us (if any). You agree that any notices, agreements, disclosures, or other communications that we send to you electronically satisfy any legal communication requirements.
 
-### 22.4 Cumulative Remedies
+### 23.4 Cumulative Remedies
 
 All rights and remedies provided under these Terms are cumulative and are not exclusive of any rights or remedies provided by law.
 
-### 22.5 Headings
+### 23.5 Headings
 
 The section headings in these Terms are for convenience only and have no legal or contractual effect. They shall not be used to interpret or construe any provision of these Terms.
 
-### 22.6 Independent Obligations
+### 23.6 Independent Obligations
 
 Each party's obligations under these Terms are independent of the other party's obligations. A party's performance is not conditioned on the other party's performance.
 

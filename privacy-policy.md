@@ -1,13 +1,15 @@
 # Privacy Policy
 
 **FlexLex**
-**Last Updated: May 9, 2026**
+**Last Updated: July 2, 2026**
 
 This Privacy Policy describes how FlexLex ("the App", "we", "us", or "our") handles information when you use our mobile application. By using the App, you agree to the practices described in this Privacy Policy. If you do not agree, please do not use the App.
 
 ## 1. Overview
 
-FlexLex is a vocabulary learning application designed with a privacy-first approach. The App operates primarily offline. We do not collect, store, transmit, or sell your personal data to any server, third party, or advertising network. All learning data you create stays on your device unless you choose to export or share it.
+FlexLex is a vocabulary learning application designed with a privacy-first approach. The App operates primarily offline. We do not collect, store, transmit, or sell your personal data to advertising networks, data brokers, or any third party, and we do not use analytics or tracking of any kind. All learning data you create — your sets, cards, images, progress and statistics — stays on your device unless you choose to export or share it.
+
+The one exception is a non-personal device identifier used to verify FlexLex Pro purchases and to administer the free trial. This identifier is described in Section 5.1 and is the only data the App sends to and stores on a server we operate. It is never linked to your name, email, or your learning content.
 
 ## 2. Information We Do NOT Collect
 
@@ -45,9 +47,11 @@ You may deny these permissions; the App will continue to function without camera
 
 The App is designed to work offline. However, certain optional features require an internet connection. These features are always user-initiated and never occur in the background without your action.
 
-### 5.1 Pro Purchase Verification (User-Initiated)
+### 5.1 Pro Purchase Verification and Free Trial (User-Initiated)
 
-When you purchase or restore FlexLex Pro, or redeem a promotional code, the App communicates with our purchase verification service hosted on Cloudflare Workers (`flexlex-pro.flexlexapp.workers.dev`). During this process, a device identifier (derived from your device hardware information) is sent to verify and bind your Pro entitlement to your device. This identifier is used solely for purchase verification and is not linked to any personal information. It is not shared with any third party. The communication is encrypted in transit using TLS.
+When you purchase or restore FlexLex Pro, redeem a promotional code, or start the free trial, the App communicates with our verification service hosted on Cloudflare Workers (`flexlex-pro.flexlexapp.workers.dev`). During this process, a device identifier (derived from your device hardware information) is sent to verify and bind your Pro entitlement — or your trial eligibility — to your device.
+
+So that a Pro entitlement can be restored and so that the free trial can be offered once per device (and not repeatedly through reinstalling the App), this device identifier and the associated entitlement/trial status are **stored** on the verification service. This is the only user-related data we retain on a server. The identifier is a pseudonymous value; it is not linked to your name, email address, or any of your learning content, and it is never shared with or sold to any third party. The communication is encrypted in transit using TLS. See Section 9 for how to request deletion of this record.
 
 ### 5.2 Spell-Check Dictionaries (User-Initiated)
 
@@ -67,18 +71,34 @@ The set of supported translation languages may differ between platforms, as each
 
 The App uses your device's built-in text-to-speech (TTS) engine to pronounce words. Depending on your device and OS configuration, the TTS engine may use cloud services provided by your device manufacturer (e.g., Google, Apple). We do not control or have access to any data processed by your device's TTS service.
 
+### 5.5 AI Story Generation (User-Initiated, On-Device)
+
+The App includes an optional feature that generates short practice stories from the words in your study set using an on-device AI language model. All text generation happens locally on your device — the words in your set, your prompts, and the generated stories are **not** transmitted to us or to any external server.
+
+The only network activity this feature involves is a one-time download of the AI model itself, which you explicitly trigger:
+
+- On supported Android devices, the App may use the system's built-in on-device AI (Google AI Core / Gemini Nano), which is provided and managed by Google as part of your device.
+- Otherwise, the App downloads an open-source language model (Qwen 2.5) from Hugging Face (`huggingface.co`). The model file is cached locally and reused for all future generations. No personal data or study content is sent during this download.
+
+After the model is available, story generation works fully offline. This feature is optional; if you never open it, no model is downloaded.
+
 ## 6. Backup and Export
 
 The App allows you to export your study sets and create full backups of your data. Exported files are saved in standard formats (.json, .zip) and shared via your device's native share sheet. Once you share or save a backup file, the security of that file is your responsibility. Backup files are not encrypted by the App.
+
+**Automatic local backup after updates.** To protect your data across App updates, the first time you open the App after an update that changes its internal data format, the App automatically writes one backup file to your device's public **Downloads** folder (in a `FlexLex` subfolder). This file never leaves your device — it is written only to local device storage and is not uploaded anywhere. It is visible in your device's file manager so that you can restore or delete it yourself. Because it contains your complete study data, we recommend you treat it like any other backup file and delete it if you do not want it kept.
 
 We strongly recommend storing backups in a secure location and not sharing them publicly, as they contain your complete study data.
 
 ## 7. Data Sharing
 
-We do not share, sell, rent, trade, or otherwise disclose any of your data to any third party. The only way your data leaves your device is if you:
+We do not share, sell, rent, trade, or otherwise disclose your learning content to any third party. The only way your study content leaves your device is if you manually export or share a study set or backup file. Certain optional, user-initiated features additionally make outbound connections that do **not** carry your learning content:
 
-- Manually export or share a study set or backup file
-- Download spell-check dictionaries or translation models (which connects to GitHub and, on Android, Google)
+- Downloading spell-check dictionaries (connects to GitHub) or translation models (on Android, connects to Google)
+- Downloading the optional AI story model (connects to Hugging Face; see Section 5.5)
+- Verifying a Pro purchase or free trial (connects to our Cloudflare Worker and sends the non-personal device identifier described in Section 5.1)
+
+The automatic post-update backup described in Section 6 is written only to your device's local Downloads folder and is never uploaded to us or anyone else.
 
 ## 8. Children's Privacy
 
@@ -90,9 +110,9 @@ All your data is stored locally on your device. You have full control over it at
 
 - **Delete individual items**: You can delete any set, folder, or word within the App.
 - **Delete all data**: You can wipe all App data at once via Settings → Data → Delete All Data within the App, or through your device's system settings (Settings > Apps > FlexLex > Clear Data).
-- **Uninstalling the App** removes all locally stored data, including study sets, images, preferences, and statistics.
+- **Uninstalling the App** removes all locally stored data, including study sets, images, preferences, and statistics. Note that the automatic backup written to your public Downloads folder (Section 6) is **not** removed by uninstalling — you can delete it yourself from your device's file manager at any time.
 
-We do not retain any data on external servers, so there is nothing for us to delete on our end.
+The only data we retain off your device is the pseudonymous device identifier and associated Pro/trial status described in Section 5.1. This record contains no personal information and none of your learning content. If you would like this record deleted, contact us at the address in Section 16 and we will remove it; deleting it does not affect any data stored on your device.
 
 ## 10. Security
 
