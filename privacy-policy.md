@@ -1,25 +1,33 @@
 # Privacy Policy
 
 **FlexLex**
-**Last Updated: July 2, 2026**
+**Last Updated: August 2, 2026**
 
 This Privacy Policy describes how FlexLex ("the App", "we", "us", or "our") handles information when you use our mobile application. By using the App, you agree to the practices described in this Privacy Policy. If you do not agree, please do not use the App.
 
 ## 1. Overview
 
-FlexLex is a vocabulary learning application designed with a privacy-first approach. The App operates primarily offline. We do not collect, store, transmit, or sell your personal data to advertising networks, data brokers, or any third party, and we do not use analytics or tracking of any kind. All learning data you create — your sets, cards, images, progress and statistics — stays on your device unless you choose to export or share it.
+FlexLex is a vocabulary learning application designed with a privacy-first approach. The App operates primarily offline. All learning data you create — your sets, cards, images, progress and statistics — stays on your device unless you choose to export or share it. We do not sell your personal data, and we do not use analytics or tracking of any kind for our own purposes.
 
-The one exception is a non-personal device identifier used to verify FlexLex Pro purchases and to administer the free trial. This identifier is described in Section 5.1 and is the only data the App sends to and stores on a server we operate. It is never linked to your name, email, or your learning content.
+There are three exceptions to the offline-by-default rule, each described in detail in Section 5:
+
+- **Advertising.** The free version of the App displays ads supplied by Google AdMob. The AdMob SDK collects your device's advertising identifier and related device and usage data. This happens automatically while you use the free version — it is not something you initiate. See Section 5.6. FlexLex Pro removes all ads.
+- **Pro purchase verification.** A non-personal device identifier is sent to and stored on a server we operate, solely to bind and restore your Pro entitlement. See Section 5.1.
+- **AI Story generation (optional).** If you choose to enable this feature and supply your own Google Gemini API key, the words from your study set and your prompt are sent to Google's Gemini API. See Section 5.5.
+
+Apart from these, we do not transmit your learning content anywhere.
 
 ## 2. Information We Do NOT Collect
 
 - We do **not** collect personal information (name, email, phone number, address, etc.)
 - We do **not** require user accounts, registration, or login
-- We do **not** use analytics, tracking, or telemetry of any kind
-- We do **not** use advertising SDKs or display ads
-- We do **not** use cookies, device fingerprinting, or behavioral tracking
-- We do **not** transmit crash reports or diagnostic data
-- We do **not** access your contacts, call logs, SMS, location, microphone, or any sensor data beyond what is explicitly described below
+- We do **not** operate our own analytics, tracking, or telemetry
+- We do **not** transmit crash reports or diagnostic data to ourselves
+- We do **not** access your contacts, call logs, SMS, precise location, microphone, or any sensor data beyond what is explicitly described below
+- We do **not** send your study sets, cards, images, or learning progress to our advertising partner, and your learning content is never used to target ads
+- We do **not** sell or rent your data to data brokers
+
+**Important:** the free version of the App does display third-party ads, and the Google AdMob SDK it uses collects your advertising identifier and certain device and usage data for its own purposes. That collection is described in Section 5.6 and is governed by Google's privacy policy, not ours. If you do not want it, FlexLex Pro removes ads entirely.
 
 ## 3. Data Stored on Your Device
 
@@ -45,13 +53,13 @@ You may deny these permissions; the App will continue to function without camera
 
 ## 5. Network Usage and Third-Party Services
 
-The App is designed to work offline. However, certain optional features require an internet connection. These features are always user-initiated and never occur in the background without your action.
+The App is designed to work offline. Most features that require an internet connection are optional and user-initiated. The one exception is advertising in the free version (Section 5.6), which loads automatically as you use the App.
 
-### 5.1 Pro Purchase Verification and Free Trial (User-Initiated)
+### 5.1 Pro Purchase Verification (User-Initiated)
 
-When you purchase or restore FlexLex Pro, redeem a promotional code, or start the free trial, the App communicates with our verification service hosted on Cloudflare Workers (`flexlex-pro.flexlexapp.workers.dev`). During this process, a device identifier (derived from your device hardware information) is sent to verify and bind your Pro entitlement — or your trial eligibility — to your device.
+When you purchase or restore FlexLex Pro or redeem a promotional or gift code, the App communicates with our verification service hosted on Cloudflare Workers (`flexlex-pro.flexlexapp.workers.dev`). During this process, a device identifier (derived from your device hardware information) is sent to verify and bind your Pro entitlement to your device.
 
-So that a Pro entitlement can be restored and so that the free trial can be offered once per device (and not repeatedly through reinstalling the App), this device identifier and the associated entitlement/trial status are **stored** on the verification service. This is the only user-related data we retain on a server. The identifier is a pseudonymous value; it is not linked to your name, email address, or any of your learning content, and it is never shared with or sold to any third party. The communication is encrypted in transit using TLS. See Section 9 for how to request deletion of this record.
+So that a Pro entitlement can be restored after a reinstall, this device identifier and the associated entitlement status are **stored** on the verification service. This is the only user-related data we retain on a server. The identifier is a pseudonymous value; it is not linked to your name, email address, or any of your learning content, and it is never shared with or sold to any third party. It is not used for advertising and is not shared with our advertising partner. The communication is encrypted in transit using TLS. See Section 9 for how to request deletion of this record.
 
 ### 5.2 Spell-Check Dictionaries (User-Initiated)
 
@@ -71,16 +79,42 @@ The set of supported translation languages may differ between platforms, as each
 
 The App uses your device's built-in text-to-speech (TTS) engine to pronounce words. Depending on your device and OS configuration, the TTS engine may use cloud services provided by your device manufacturer (e.g., Google, Apple). We do not control or have access to any data processed by your device's TTS service.
 
-### 5.5 AI Story Generation (User-Initiated, On-Device)
+### 5.5 AI Story Generation (Optional, Uses Your Own Google Gemini API Key)
 
-The App includes an optional feature that generates short practice stories from the words in your study set using an on-device AI language model. All text generation happens locally on your device — the words in your set, your prompts, and the generated stories are **not** transmitted to us or to any external server.
+The App includes an optional feature that generates short practice stories from the words in your study set. This feature is **off by default** and does nothing until you supply your own Google Gemini API key, which you obtain directly from Google.
 
-The only network activity this feature involves is a one-time download of the AI model itself, which you explicitly trigger:
+**If you enable it, your study content leaves your device.** When you generate a story, the App sends the words from the selected study set, together with the instructions for the story, to Google's Gemini API (`generativelanguage.googleapis.com`) using your API key. Google returns the generated story. This means:
 
-- On supported Android devices, the App may use the system's built-in on-device AI (Google AI Core / Gemini Nano), which is provided and managed by Google as part of your device.
-- Otherwise, the App downloads an open-source language model (Qwen 2.5) from Hugging Face (`huggingface.co`). The model file is cached locally and reused for all future generations. No personal data or study content is sent during this download.
+- The words and translations in the set you generate from are transmitted to Google.
+- The request is made under **your own** Google API key and is therefore subject to your own agreement with Google, including whatever quota, logging, retention and human-review practices apply to that key and account tier. We have no control over and no access to that data. See [Google's Gemini API Terms](https://ai.google.dev/gemini-api/terms) and [Google's Privacy Policy](https://policies.google.com/privacy).
+- We do not receive, proxy, store, or see your prompts, your study content, or the generated stories. The App communicates with Google directly.
 
-After the model is available, story generation works fully offline. This feature is optional; if you never open it, no model is downloaded.
+Your API key is stored on your device using the operating system's secure credential storage (Android Keystore / iOS Keychain). It is never transmitted to us. You can remove it at any time in Settings, which disables the feature.
+
+If you never enter an API key, this feature makes no network requests and none of your study content is transmitted anywhere.
+
+### 5.6 Advertising (Free Version Only)
+
+The free version of the App is supported by advertising supplied by **Google AdMob**, a Google service. Ads appear in two places:
+
+- A **banner** on browsing screens (such as your library and set details). Banners never appear during a study session.
+- **Rewarded video ads** that you choose to watch in exchange for an in-app benefit, such as an extra heart, gems, or a spin of the Lucky Wheel. These only ever play when you tap to start them.
+
+**FlexLex Pro removes all advertising**, and with it the AdMob data collection described below.
+
+**What is collected.** To serve, cap, measure and (where permitted) personalise ads, the Google AdMob SDK collects information from your device. This typically includes:
+
+- Your device's **advertising identifier** (the Android Advertising ID / Apple IDFA) — a resettable, pseudonymous ID used for ad personalisation, frequency capping and fraud prevention
+- **Device and connection information** — device model, operating system version, language, country, screen characteristics, coarse network information and IP address (from which approximate, city-level location may be derived)
+- **Ad interaction data** — which ads were requested, shown, viewed, or clicked, and diagnostic and performance information
+
+This collection is performed by Google's SDK for Google's own purposes as an independent controller. **We do not receive this data**, we do not combine it with anything else in the App, and none of your study sets, cards, images, learning progress, or statistics are ever sent to Google for advertising. Google's handling of this data is governed by [Google's Privacy Policy](https://policies.google.com/privacy) and the [Google Advertising Privacy & Terms](https://policies.google.com/technologies/partner-sites). For details on how AdMob uses data, see [How Google uses information from sites or apps that use our services](https://policies.google.com/technologies/partner-sites).
+
+**Your choices.**
+
+- **Consent (EEA, UK, Switzerland).** On first launch in a region where it is required, the App shows a Google-certified consent message (Google's User Messaging Platform) before any ad loads, letting you accept or reject personalised advertising. Declining does not restrict your use of the App — you will simply see non-personalised ads. You can withdraw or change a previously given consent at any time by clearing the App's data (*Settings → Apps → FlexLex → Clear Data* on Android), which causes the consent message to be shown again on the next launch.
+- **Reset or limit your advertising ID.** On Android: *Settings → Privacy → Ads*, where you can reset the ID or delete it entirely. On iOS: *Settings → Privacy & Security → Tracking*.
+- **Remove ads entirely.** Purchase FlexLex Pro.
 
 ## 6. Backup and Export
 
@@ -92,17 +126,30 @@ We strongly recommend storing backups in a secure location and not sharing them 
 
 ## 7. Data Sharing
 
-We do not share, sell, rent, trade, or otherwise disclose your learning content to any third party. The only way your study content leaves your device is if you manually export or share a study set or backup file. Certain optional, user-initiated features additionally make outbound connections that do **not** carry your learning content:
+We do not sell, rent, or trade your data. We do not disclose your learning content to any third party, with one exception you control: if you enable AI Story generation with your own Gemini API key, the study content you generate from is sent to Google (Section 5.5).
 
-- Downloading spell-check dictionaries (connects to GitHub) or translation models (on Android, connects to Google)
-- Downloading the optional AI story model (connects to Hugging Face; see Section 5.5)
-- Verifying a Pro purchase or free trial (connects to our Cloudflare Worker and sends the non-personal device identifier described in Section 5.1)
+Your study content is **never** shared with our advertising partner and is never used to target ads.
+
+Outbound connections the App makes, and what each carries:
+
+| Feature | Connects to | Carries your learning content? |
+|---|---|---|
+| Advertising, free version (Section 5.6) | Google AdMob | No — but collects your advertising ID and device/usage data |
+| AI Story generation, if enabled (Section 5.5) | Google Gemini API | **Yes** — the words in the selected set and your prompt |
+| Pro purchase verification (Section 5.1) | Our Cloudflare Worker | No — only a pseudonymous device identifier |
+| Spell-check dictionaries (Section 5.2) | GitHub | No |
+| Translation models, Android (Section 5.3) | Google | No |
+| Manual export or share | Wherever you send it | Yes — you choose the destination |
 
 The automatic post-update backup described in Section 6 is written only to your device's local Downloads folder and is never uploaded to us or anyone else.
 
 ## 8. Children's Privacy
 
-The App does not knowingly collect any personal information from anyone, including children under the age of 13 (or the applicable age of digital consent in your jurisdiction). Since the App does not collect personal information, it does not require parental consent under the Children's Online Privacy Protection Act (COPPA), the General Data Protection Regulation (GDPR), or similar legislation. However, children should use the App under parental supervision, particularly when using features that require internet access.
+The App is intended for a general audience and is **not directed to children under 13** (or the applicable age of digital consent in your jurisdiction). We do not knowingly collect personal information from children.
+
+Parents should be aware that the free version displays third-party ads and that the Google AdMob SDK collects the advertising identifier and device data described in Section 5.6. Where required, ads are served in non-personalised form for users identified as children or below the age of consent. The AI Story feature requires an adult to supply a Google API key and, once enabled, sends study content to Google (Section 5.5).
+
+Children should use the App under parental supervision, particularly for features that require internet access. If you believe a child has provided personal information through the App, contact us at the address in Section 16.
 
 ## 9. Data Retention and Deletion
 
@@ -112,7 +159,9 @@ All your data is stored locally on your device. You have full control over it at
 - **Delete all data**: You can wipe all App data at once via Settings → Data → Delete All Data within the App, or through your device's system settings (Settings > Apps > FlexLex > Clear Data).
 - **Uninstalling the App** removes all locally stored data, including study sets, images, preferences, and statistics. Note that the automatic backup written to your public Downloads folder (Section 6) is **not** removed by uninstalling — you can delete it yourself from your device's file manager at any time.
 
-The only data we retain off your device is the pseudonymous device identifier and associated Pro/trial status described in Section 5.1. This record contains no personal information and none of your learning content. If you would like this record deleted, contact us at the address in Section 16 and we will remove it; deleting it does not affect any data stored on your device.
+The only data **we** retain off your device is the pseudonymous device identifier and associated Pro entitlement status described in Section 5.1. This record contains no personal information and none of your learning content. If you would like this record deleted, contact us at the address in Section 16 and we will remove it; deleting it does not affect any data stored on your device.
+
+Data collected by **Google** — through AdMob (Section 5.6) or, if you enabled it, the Gemini API (Section 5.5) — is held by Google under its own retention policies and is not ours to delete. To exercise rights over that data, use Google's own controls (for advertising, reset or delete your advertising ID as described in Section 5.6; for the Gemini API, use the Google account that owns the API key).
 
 ## 10. Security
 
@@ -124,11 +173,19 @@ The App may interact with third-party services as described in Section 5. We are
 
 ## 12. International Users
 
-The App processes all data locally on your device. No data is transferred across borders by the App. If you use optional features that connect to third-party services (Google, GitHub), those services may process data in accordance with their own privacy policies and applicable laws.
+The App processes your learning content locally on your device. However, the third-party services described in Section 5 — in particular Google AdMob, which operates in the free version — may process and store data on servers outside your country, including in the United States. Those transfers are carried out by the respective provider under its own privacy policy, transfer mechanisms and applicable law, not by us. See [Google's Privacy Policy](https://policies.google.com/privacy) for details of Google's international transfers.
 
 ## 13. Your Rights
 
-Since we do not collect or store any personal data, traditional data subject rights (access, rectification, erasure, portability) under regulations such as GDPR, CCPA, or similar laws are exercised directly on your device through the App's built-in functionality (editing, deleting, exporting data).
+Because your learning content never leaves your device unless you send it somewhere, traditional data subject rights (access, rectification, erasure, portability) under regulations such as GDPR, CCPA and similar laws are exercised directly on your device through the App's built-in functionality (editing, deleting and exporting your data).
+
+For the limited data that does leave your device:
+
+- **The Pro entitlement record we hold** (Section 5.1) — request deletion at the address in Section 16.
+- **Advertising data held by Google** (Section 5.6) — withdraw or change consent as described in Section 5.6, reset or delete your advertising identifier in your device settings, or purchase FlexLex Pro to stop ad serving altogether. Google is the controller for this data; requests concerning it should be directed to Google.
+- **Gemini API data** (Section 5.5) — governed by the Google account that owns the API key you supplied. Remove the key in the App's settings to stop any further transmission.
+
+We do not sell personal information, and we do not share it for cross-context behavioural advertising as those terms are defined under the CCPA/CPRA.
 
 ## 14. Changes to This Privacy Policy
 
